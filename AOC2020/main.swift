@@ -7,5 +7,5 @@
 
 import Foundation
 
-print(Puzzle03().part2())
+print(Puzzle04().part2())
 
