@@ -23,11 +23,13 @@ class Puzzle05: Puzzle {
     }
 
     func part2() -> String {
-        let ids = possibleSeatIds(maxRows: 128, maxCols: 8).subtracting(seatIds(from: input)).sorted()
-        /// If ids contains an entire row worth of seats, that whole row is missing. Our seat is the one that
-        /// that is present in ID without any other seats from that row. Can't be bothered to write code to calculate
-        /// this. Just looked at ids array manually and figured it out :P
-        return "\(ids)"
+        let ids = seatIds(from: input).sorted()
+        for (index, seatId) in ids.enumerated() {
+            if ids[index + 1] != seatId + 1 {
+                return "\(seatId + 1)"
+            }
+        }
+        return "Could not find own seat ID!!!"
     }
 
     private func seatIds(from input: [String]) -> [Int] {
@@ -44,16 +46,6 @@ class Puzzle05: Puzzle {
         }
 
         return rowCols.map(seatId)
-    }
-
-    private func possibleSeatIds(maxRows: Int, maxCols: Int) -> Set<Int> {
-        var seatIds = Set<Int>()
-        (0..<maxRows).forEach { (row) in
-            (0..<maxCols).forEach { (col) in
-                seatIds.insert(row * 8 + col)
-            }
-        }
-        return seatIds
     }
 
     private func seatId(rowCol: RowCol) -> Int {

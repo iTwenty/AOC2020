@@ -16,39 +16,21 @@ class Puzzle06: Puzzle {
     }
 
     func part1() -> String {
-        let sum = yesses(from: input).map { $0.count }.reduce(0, +)
+        let sum = yesses(from: input) { $0.union($1) }.map { $0.count }.reduce(0, +)
         return "\(sum)"
     }
 
     func part2() -> String {
-        let sum = yessesP2(from: input).map { $0.count }.reduce(0, +)
+        let sum = yesses(from: input) { $0.intersection($1) }.map { $0.count }.reduce(0, +)
         return "\(sum)"
     }
 
-    private func yesses(from input: [String]) -> [Set<Character>] {
-        var yesses = [Set<Character>]()
-        var currentYesses = Set<Character>()
-        for i in input {
-            if i == "" {
-                yesses.append(currentYesses)
-                currentYesses = []
-            } else {
-                for c in i {
-                    currentYesses.insert(c)
-                }
-            }
-        }
-        return yesses
-    }
-
-    private func yessesP2(from input: [String]) -> [Set<Character>] {
+    private func yesses(from input: [String], op: (Set<Character>, Set<Character>) -> Set<Character>) -> [Set<Character>] {
         var yesses = [Set<Character>]()
         var personYesses = [Set<Character>]()
         for i in input {
             if i == "" {
-                let commonYesses = personYesses.dropFirst().reduce(personYesses.first!) { (acc, personYes) in
-                    acc.intersection(personYes)
-                }
+                let commonYesses = personYesses.dropFirst().reduce(personYesses.first!, op)
                 yesses.append(commonYesses)
                 personYesses = []
             } else {
