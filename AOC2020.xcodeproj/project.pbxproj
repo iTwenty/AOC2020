@@ -9,8 +9,14 @@
 /* Begin PBXBuildFile section */
 		630AEC75257B5C3E008B85A8 /* Puzzle05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630AEC74257B5C3E008B85A8 /* Puzzle05.swift */; };
 		630AEC7A257B5C46008B85A8 /* Input05 in Resources */ = {isa = PBXBuildFile; fileRef = 630AEC73257B5C28008B85A8 /* Input05 */; };
+		6357C4F4257E531100CF2628 /* Input07-test2 in Resources */ = {isa = PBXBuildFile; fileRef = 6357C4F3257E531100CF2628 /* Input07-test2 */; };
+		6357C4FA257E53EB00CF2628 /* Input07-test1 in Resources */ = {isa = PBXBuildFile; fileRef = 6357C4F9257E53EB00CF2628 /* Input07-test1 */; };
 		635AA8102578ACB8005728C4 /* Input03 in Resources */ = {isa = PBXBuildFile; fileRef = 635AA80F2578ACB3005728C4 /* Input03 */; };
 		635AA8142578ACCA005728C4 /* Puzzle03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AA8132578ACCA005728C4 /* Puzzle03.swift */; };
+		6397E7CA257E1B1E008AC90C /* Input07 in Resources */ = {isa = PBXBuildFile; fileRef = 6397E7C9257E1B1E008AC90C /* Input07 */; };
+		6397E7CE257E1B33008AC90C /* Puzzle07.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397E7CD257E1B33008AC90C /* Puzzle07.swift */; };
+		6397E7D3257E1F14008AC90C /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397E7D2257E1F14008AC90C /* Graph.swift */; };
+		6397E7D9257E21F1008AC90C /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6397E7D8257E21F1008AC90C /* Edge.swift */; };
 		63B502352579FB27000D8DDA /* Input04 in Resources */ = {isa = PBXBuildFile; fileRef = 63B502342579FB27000D8DDA /* Input04 */; };
 		63B5023B2579FB3F000D8DDA /* Puzzle04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5023A2579FB3F000D8DDA /* Puzzle04.swift */; };
 		63D9822025775C9700537B6D /* Puzzle02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D9821F25775C9700537B6D /* Puzzle02.swift */; };
@@ -51,8 +57,14 @@
 /* Begin PBXFileReference section */
 		630AEC73257B5C28008B85A8 /* Input05 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input05; sourceTree = "<group>"; };
 		630AEC74257B5C3E008B85A8 /* Puzzle05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle05.swift; sourceTree = "<group>"; };
+		6357C4F3257E531100CF2628 /* Input07-test2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input07-test2"; sourceTree = "<group>"; };
+		6357C4F9257E53EB00CF2628 /* Input07-test1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input07-test1"; sourceTree = "<group>"; };
 		635AA80F2578ACB3005728C4 /* Input03 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input03; sourceTree = "<group>"; };
 		635AA8132578ACCA005728C4 /* Puzzle03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle03.swift; sourceTree = "<group>"; };
+		6397E7C9257E1B1E008AC90C /* Input07 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input07; sourceTree = "<group>"; };
+		6397E7CD257E1B33008AC90C /* Puzzle07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle07.swift; sourceTree = "<group>"; };
+		6397E7D2257E1F14008AC90C /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		6397E7D8257E21F1008AC90C /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		63B502342579FB27000D8DDA /* Input04 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input04; sourceTree = "<group>"; };
 		63B5023A2579FB3F000D8DDA /* Puzzle04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle04.swift; sourceTree = "<group>"; };
 		63D9821E25775C8200537B6D /* Input02 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input02; sourceTree = "<group>"; };
@@ -104,6 +116,26 @@
 			path = 03;
 			sourceTree = "<group>";
 		};
+		6397E7C8257E1B08008AC90C /* 07 */ = {
+			isa = PBXGroup;
+			children = (
+				6397E7C9257E1B1E008AC90C /* Input07 */,
+				6357C4F9257E53EB00CF2628 /* Input07-test1 */,
+				6357C4F3257E531100CF2628 /* Input07-test2 */,
+				6397E7CD257E1B33008AC90C /* Puzzle07.swift */,
+			);
+			path = 07;
+			sourceTree = "<group>";
+		};
+		6397E7D1257E1F05008AC90C /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				6397E7D2257E1F14008AC90C /* Graph.swift */,
+				6397E7D8257E21F1008AC90C /* Edge.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		63B502332579FB08000D8DDA /* 04 */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +174,7 @@
 		63F4D5D525765A3200295154 /* AOC2020 */ = {
 			isa = PBXGroup;
 			children = (
+				6397E7D1257E1F05008AC90C /* Graph */,
 				63F4D5DF25765AD700295154 /* Helpers */,
 				63F4D5DE25765AC200295154 /* 01 */,
 				63D9821D25775C6200537B6D /* 02 */,
@@ -149,6 +182,7 @@
 				63B502332579FB08000D8DDA /* 04 */,
 				630AEC72257B5C0A008B85A8 /* 05 */,
 				63F7531D257C9CEE009BE998 /* 06 */,
+				6397E7C8257E1B08008AC90C /* 07 */,
 				63F4D5D625765A3200295154 /* main.swift */,
 			);
 			path = AOC2020;
@@ -260,12 +294,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6357C4F4257E531100CF2628 /* Input07-test2 in Resources */,
 				635AA8102578ACB8005728C4 /* Input03 in Resources */,
 				63F4D5F125765B7D00295154 /* Input01 in Resources */,
 				630AEC7A257B5C46008B85A8 /* Input05 in Resources */,
 				63F75325257C9D17009BE998 /* Input06 in Resources */,
 				63D9822525775D2600537B6D /* Input02 in Resources */,
+				6357C4FA257E53EB00CF2628 /* Input07-test1 in Resources */,
 				63B502352579FB27000D8DDA /* Input04 in Resources */,
+				6397E7CA257E1B1E008AC90C /* Input07 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +315,15 @@
 			files = (
 				630AEC75257B5C3E008B85A8 /* Puzzle05.swift in Sources */,
 				635AA8142578ACCA005728C4 /* Puzzle03.swift in Sources */,
+				6397E7D9257E21F1008AC90C /* Edge.swift in Sources */,
 				63F4D5FD25765BC900295154 /* Puzzle01.swift in Sources */,
 				63F75320257C9D11009BE998 /* Puzzle06.swift in Sources */,
 				63B5023B2579FB3F000D8DDA /* Puzzle04.swift in Sources */,
 				63F4D5F725765BB700295154 /* Puzzle.swift in Sources */,
 				63F4D5D725765A3200295154 /* main.swift in Sources */,
+				6397E7D3257E1F14008AC90C /* Graph.swift in Sources */,
 				63D9822025775C9700537B6D /* Puzzle02.swift in Sources */,
+				6397E7CE257E1B33008AC90C /* Puzzle07.swift in Sources */,
 				63F4D5E125765AF400295154 /* InputFileReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
