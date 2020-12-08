@@ -7,7 +7,7 @@
 
 import Foundation
 
-let puzzle = Puzzle07()
+let puzzle = Puzzle08()
 
 print(puzzle.part1())
 print(puzzle.part2())
