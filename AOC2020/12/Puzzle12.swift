@@ -117,7 +117,7 @@ struct Position {
     }
 }
 
-class Ship {
+fileprivate class Ship {
     private var direction: Direction
     private var position: Position // always relative to origin
     private var waypointPosition: Position // always relative to origin
@@ -129,7 +129,6 @@ class Ship {
     }
 
     func navigate(instruction: String, guesswork: Bool) {
-        print(instruction)
         let action = String(instruction.first!)
         let value = Int(instruction.dropFirst())!
         if let movement = Movement.from(action, value: value) {
@@ -137,7 +136,6 @@ class Ship {
         } else if let rotation = Rotation.from(action, value: value) {
             guesswork ? rotate(rotation) : rotateProperly(rotation)
         }
-        print("\(position) \(waypointPosition) \(waypointPosition - position)")
     }
 
     var manhattan: Int {

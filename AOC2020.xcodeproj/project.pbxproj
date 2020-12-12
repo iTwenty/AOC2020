@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,10 @@
 		63F7F0FB2584931E00C74D95 /* Input12 in Resources */ = {isa = PBXBuildFile; fileRef = 63F7F0FA2584931900C74D95 /* Input12 */; };
 		63F7F0FF2584933500C74D95 /* Puzzle12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7F0FE2584933500C74D95 /* Puzzle12.swift */; };
 		63F7F10425849FC400C74D95 /* Input12-test in Resources */ = {isa = PBXBuildFile; fileRef = 63F7F10325849FC400C74D95 /* Input12-test */; };
+		63F7F10A2584CA4600C74D95 /* Puzzle12Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7F1092584CA4600C74D95 /* Puzzle12Complex.swift */; };
+		63F7F10F2584CAFC00C74D95 /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = 63F7F10E2584CAFC00C74D95 /* ComplexModule */; };
+		63F7F1112584CAFC00C74D95 /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = 63F7F1102584CAFC00C74D95 /* RealModule */; };
+		63F7F1132584CAFC00C74D95 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = 63F7F1122584CAFC00C74D95 /* Numerics */; };
 		63F91389257F3F8F0079160A /* Input08 in Resources */ = {isa = PBXBuildFile; fileRef = 63F91388257F3F8F0079160A /* Input08 */; };
 		63F9138F257F3F9B0079160A /* Puzzle08.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9138E257F3F9B0079160A /* Puzzle08.swift */; };
 		63F91393257F41B10079160A /* ConsoleProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F91392257F41B10079160A /* ConsoleProgram.swift */; };
@@ -105,6 +109,7 @@
 		63F7F0FA2584931900C74D95 /* Input12 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input12; sourceTree = "<group>"; };
 		63F7F0FE2584933500C74D95 /* Puzzle12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle12.swift; sourceTree = "<group>"; };
 		63F7F10325849FC400C74D95 /* Input12-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input12-test"; sourceTree = "<group>"; };
+		63F7F1092584CA4600C74D95 /* Puzzle12Complex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle12Complex.swift; sourceTree = "<group>"; };
 		63F91388257F3F8F0079160A /* Input08 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input08; sourceTree = "<group>"; };
 		63F9138E257F3F9B0079160A /* Puzzle08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle08.swift; sourceTree = "<group>"; };
 		63F91392257F41B10079160A /* ConsoleProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleProgram.swift; sourceTree = "<group>"; };
@@ -115,6 +120,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F7F1112584CAFC00C74D95 /* RealModule in Frameworks */,
+				63F7F1132584CAFC00C74D95 /* Numerics in Frameworks */,
+				63F7F10F2584CAFC00C74D95 /* ComplexModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 				63F7F0FA2584931900C74D95 /* Input12 */,
 				63F7F10325849FC400C74D95 /* Input12-test */,
 				63F7F0FE2584933500C74D95 /* Puzzle12.swift */,
+				63F7F1092584CA4600C74D95 /* Puzzle12Complex.swift */,
 			);
 			path = 12;
 			sourceTree = "<group>";
@@ -317,6 +326,11 @@
 				63F4D60125765C5200295154 /* PBXTargetDependency */,
 			);
 			name = AOC2020;
+			packageProductDependencies = (
+				63F7F10E2584CAFC00C74D95 /* ComplexModule */,
+				63F7F1102584CAFC00C74D95 /* RealModule */,
+				63F7F1122584CAFC00C74D95 /* Numerics */,
+			);
 			productName = AOC2020;
 			productReference = 63F4D5D325765A3200295154 /* AOC2020 */;
 			productType = "com.apple.product-type.tool";
@@ -364,6 +378,9 @@
 				Base,
 			);
 			mainGroup = 63F4D5CA25765A3200295154;
+			packageReferences = (
+				63F7F10D2584CAFC00C74D95 /* XCRemoteSwiftPackageReference "swift-numerics" */,
+			);
 			productRefGroup = 63F4D5D425765A3200295154 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -417,6 +434,7 @@
 				63F75320257C9D11009BE998 /* Puzzle06.swift in Sources */,
 				63B5023B2579FB3F000D8DDA /* Puzzle04.swift in Sources */,
 				63F4D5F725765BB700295154 /* Puzzle.swift in Sources */,
+				63F7F10A2584CA4600C74D95 /* Puzzle12Complex.swift in Sources */,
 				63F9138F257F3F9B0079160A /* Puzzle08.swift in Sources */,
 				63F4D5D725765A3200295154 /* main.swift in Sources */,
 				6397E7D3257E1F14008AC90C /* Graph.swift in Sources */,
@@ -642,6 +660,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63F7F10D2584CAFC00C74D95 /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63F7F10E2584CAFC00C74D95 /* ComplexModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63F7F10D2584CAFC00C74D95 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = ComplexModule;
+		};
+		63F7F1102584CAFC00C74D95 /* RealModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63F7F10D2584CAFC00C74D95 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = RealModule;
+		};
+		63F7F1122584CAFC00C74D95 /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63F7F10D2584CAFC00C74D95 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63F4D5CB25765A3200295154 /* Project object */;
 }
