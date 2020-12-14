@@ -69,20 +69,13 @@ class Puzzle14: Puzzle {
         var addressQueue = Queue<[Character]>()
         addressQueue.enqueue(maskedAddressChars)
         while let mac = addressQueue.dequeue() {
-            var isFloating = false
-            for (idx, char) in mac.enumerated() {
-                if char == "X" {
-                    isFloating = true
-                    var zero = mac
-                    var one = mac
-                    zero[idx] = "0"
-                    one[idx] = "1"
-                    addressQueue.enqueue(zero)
-                    addressQueue.enqueue(one)
-                    break
-                }
-            }
-            if !isFloating {
+            if let xindex = mac.firstIndex(of: "X") {
+                var new = mac
+                new[xindex] = "0"
+                addressQueue.enqueue(new)
+                new[xindex] = "1"
+                addressQueue.enqueue(new)
+            } else {
                 all.append(mac)
             }
         }
