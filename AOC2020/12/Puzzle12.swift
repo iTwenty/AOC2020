@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Rotation {
+fileprivate enum Rotation {
     case R(Int), L(Int)
 
     static func from(_ char: String, value: Int) -> Rotation? {
@@ -19,7 +19,7 @@ enum Rotation {
     }
 }
 
-enum Movement {
+fileprivate enum Movement {
     case N(Int), E(Int), W(Int), S(Int), F(Int)
 
     static func from(_ char: String, value: Int) -> Movement? {
@@ -34,7 +34,7 @@ enum Movement {
     }
 }
 
-enum Direction: String {
+fileprivate enum Direction: String {
     case N, E, S, W
 
     var right: Direction {
@@ -73,7 +73,7 @@ enum Direction: String {
     }
 }
 
-struct Position {
+fileprivate struct Position {
     static let origin = Position(x: 0, y: 0)
     var x, y: Int
 
