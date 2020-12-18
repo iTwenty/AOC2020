@@ -8,7 +8,7 @@
 import Foundation
 
 struct Queue<T> {
-    fileprivate var array = [T]()
+    private var array = [T]()
 
     var count: Int {
         return array.count
