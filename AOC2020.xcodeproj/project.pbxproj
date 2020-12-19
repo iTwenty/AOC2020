@@ -12,6 +12,10 @@
 		630AEC75257B5C3E008B85A8 /* Puzzle05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630AEC74257B5C3E008B85A8 /* Puzzle05.swift */; };
 		630AEC7A257B5C46008B85A8 /* Input05 in Resources */ = {isa = PBXBuildFile; fileRef = 630AEC73257B5C28008B85A8 /* Input05 */; };
 		6310E6C8258CD16400BA8F0E /* Input18-test in Resources */ = {isa = PBXBuildFile; fileRef = 6310E6C7258CD16400BA8F0E /* Input18-test */; };
+		6310E6D1258DBFE600BA8F0E /* Puzzle19.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6310E6CE258DBFE500BA8F0E /* Puzzle19.swift */; };
+		6310E6D6258DC6E100BA8F0E /* Input19-test in Resources */ = {isa = PBXBuildFile; fileRef = 6310E6D0258DBFE500BA8F0E /* Input19-test */; };
+		6310E6D9258DC6E300BA8F0E /* Input19 in Resources */ = {isa = PBXBuildFile; fileRef = 6310E6CF258DBFE500BA8F0E /* Input19 */; };
+		6310E6DE258DCC9C00BA8F0E /* Covfefe in Frameworks */ = {isa = PBXBuildFile; productRef = 6310E6DD258DCC9C00BA8F0E /* Covfefe */; };
 		632487E02589CE96000171E4 /* Input16 in Resources */ = {isa = PBXBuildFile; fileRef = 632487DF2589CE96000171E4 /* Input16 */; };
 		632487E62589CEA3000171E4 /* Puzzle16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632487E52589CEA3000171E4 /* Puzzle16.swift */; };
 		633EB2252581E28F00D80812 /* Input10 in Resources */ = {isa = PBXBuildFile; fileRef = 633EB2242581E28F00D80812 /* Input10 */; };
@@ -100,6 +104,9 @@
 		630AEC73257B5C28008B85A8 /* Input05 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input05; sourceTree = "<group>"; };
 		630AEC74257B5C3E008B85A8 /* Puzzle05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle05.swift; sourceTree = "<group>"; };
 		6310E6C7258CD16400BA8F0E /* Input18-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input18-test"; sourceTree = "<group>"; };
+		6310E6CE258DBFE500BA8F0E /* Puzzle19.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Puzzle19.swift; sourceTree = "<group>"; };
+		6310E6CF258DBFE500BA8F0E /* Input19 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Input19; sourceTree = "<group>"; };
+		6310E6D0258DBFE500BA8F0E /* Input19-test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Input19-test"; sourceTree = "<group>"; };
 		632487DF2589CE96000171E4 /* Input16 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input16; sourceTree = "<group>"; };
 		632487E52589CEA3000171E4 /* Puzzle16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle16.swift; sourceTree = "<group>"; };
 		633EB2242581E28F00D80812 /* Input10 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input10; sourceTree = "<group>"; };
@@ -163,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F7F1112584CAFC00C74D95 /* RealModule in Frameworks */,
+				6310E6DE258DCC9C00BA8F0E /* Covfefe in Frameworks */,
 				63F7F1132584CAFC00C74D95 /* Numerics in Frameworks */,
 				63F7F10F2584CAFC00C74D95 /* ComplexModule in Frameworks */,
 			);
@@ -185,6 +193,16 @@
 				630AEC74257B5C3E008B85A8 /* Puzzle05.swift */,
 			);
 			path = 05;
+			sourceTree = "<group>";
+		};
+		6310E6CD258DBFE500BA8F0E /* 19 */ = {
+			isa = PBXGroup;
+			children = (
+				6310E6CF258DBFE500BA8F0E /* Input19 */,
+				6310E6D0258DBFE500BA8F0E /* Input19-test */,
+				6310E6CE258DBFE500BA8F0E /* Puzzle19.swift */,
+			);
+			path = 19;
 			sourceTree = "<group>";
 		};
 		632487DE2589CE83000171E4 /* 16 */ = {
@@ -367,6 +385,7 @@
 				632487DE2589CE83000171E4 /* 16 */,
 				636ECDD7258B1CF900B3EB82 /* 17 */,
 				63DDBC53258C6C6A003D4333 /* 18 */,
+				6310E6CD258DBFE500BA8F0E /* 19 */,
 				63F4D5D625765A3200295154 /* main.swift */,
 			);
 			path = AOC2020;
@@ -441,6 +460,7 @@
 				63F7F10E2584CAFC00C74D95 /* ComplexModule */,
 				63F7F1102584CAFC00C74D95 /* RealModule */,
 				63F7F1122584CAFC00C74D95 /* Numerics */,
+				6310E6DD258DCC9C00BA8F0E /* Covfefe */,
 			);
 			productName = AOC2020;
 			productReference = 63F4D5D325765A3200295154 /* AOC2020 */;
@@ -491,6 +511,7 @@
 			mainGroup = 63F4D5CA25765A3200295154;
 			packageReferences = (
 				63F7F10D2584CAFC00C74D95 /* XCRemoteSwiftPackageReference "swift-numerics" */,
+				6310E6DC258DCC9C00BA8F0E /* XCRemoteSwiftPackageReference "Covfefe" */,
 			);
 			productRefGroup = 63F4D5D425765A3200295154 /* Products */;
 			projectDirPath = "";
@@ -508,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63075159258A370300BB119F /* Input16-test2 in Resources */,
+				6310E6D9258DC6E300BA8F0E /* Input19 in Resources */,
 				63B0B8DE258731A1001EBF08 /* Input14-test in Resources */,
 				633EB2252581E28F00D80812 /* Input10 in Resources */,
 				63B0B8CD25865951001EBF08 /* Input13-test in Resources */,
@@ -522,6 +544,7 @@
 				633EB22F2581E65B00D80812 /* Input10-test1 in Resources */,
 				633EB2352581EB5700D80812 /* Input10-test2 in Resources */,
 				6397585C2585D6D800E92FB9 /* Input13 in Resources */,
+				6310E6D6258DC6E100BA8F0E /* Input19-test in Resources */,
 				63F75325257C9D17009BE998 /* Input06 in Resources */,
 				6310E6C8258CD16400BA8F0E /* Input18-test in Resources */,
 				63D9822525775D2600537B6D /* Input02 in Resources */,
@@ -557,6 +580,7 @@
 				633EB22B2581E29C00D80812 /* Puzzle10.swift in Sources */,
 				63F4D5FD25765BC900295154 /* Puzzle01.swift in Sources */,
 				63628684258331BB00E6D049 /* Puzzle11.swift in Sources */,
+				6310E6D1258DBFE600BA8F0E /* Puzzle19.swift in Sources */,
 				639758622585D6E300E92FB9 /* Puzzle13.swift in Sources */,
 				63F75320257C9D11009BE998 /* Puzzle06.swift in Sources */,
 				63B5023B2579FB3F000D8DDA /* Puzzle04.swift in Sources */,
@@ -794,6 +818,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6310E6DC258DCC9C00BA8F0E /* XCRemoteSwiftPackageReference "Covfefe" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/palle-k/Covfefe.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
 		63F7F10D2584CAFC00C74D95 /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-numerics";
@@ -805,6 +837,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6310E6DD258DCC9C00BA8F0E /* Covfefe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6310E6DC258DCC9C00BA8F0E /* XCRemoteSwiftPackageReference "Covfefe" */;
+			productName = Covfefe;
+		};
 		63F7F10E2584CAFC00C74D95 /* ComplexModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 63F7F10D2584CAFC00C74D95 /* XCRemoteSwiftPackageReference "swift-numerics" */;
