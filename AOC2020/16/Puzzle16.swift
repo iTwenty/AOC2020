@@ -79,7 +79,7 @@ class Puzzle16: Puzzle {
             }
         }
 
-        let myNames = simplifyNames(myPossibleNames).map { $0.first! }
+        let myNames = simplifyNames(myPossibleNames)
         let answer = myNames.indices.reduce(into: 1) { (acc, index) in
             if myNames[index].starts(with: "departure") {
                 acc = acc * my[index]
@@ -88,7 +88,7 @@ class Puzzle16: Puzzle {
         return "\(answer)"
     }
 
-    private func simplifyNames(_ names: [Set<String>]) -> [Set<String>] {
+    private func simplifyNames(_ names: [Set<String>]) -> [String] {
         var simplified = names
         var knownNames = simplified.filter { $0.count == 1 }
         while knownNames.count < simplified.count {
@@ -103,7 +103,7 @@ class Puzzle16: Puzzle {
             simplified = tmp
             knownNames = simplified.filter { $0.count == 1 }
         }
-        return simplified
+        return simplified.compactMap { $0.first }
     }
 
     private func allPossibleNames(field: Int) -> Set<String> {
