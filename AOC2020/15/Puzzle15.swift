@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Input {
+fileprivate enum Input {
     case challenge, example, test1
 
     var data: [Int] {

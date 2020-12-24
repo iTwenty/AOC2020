@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63044EE825930EFC00E21223 /* Puzzle23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63044EE725930EFC00E21223 /* Puzzle23.swift */; };
 		6307514E2589EA2E00BB119F /* Input16-test in Resources */ = {isa = PBXBuildFile; fileRef = 6307514D2589EA2E00BB119F /* Input16-test */; };
 		63075159258A370300BB119F /* Input16-test2 in Resources */ = {isa = PBXBuildFile; fileRef = 63075158258A370300BB119F /* Input16-test2 */; };
 		630AEC75257B5C3E008B85A8 /* Puzzle05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630AEC74257B5C3E008B85A8 /* Puzzle05.swift */; };
@@ -107,6 +108,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		63044EE725930EFC00E21223 /* Puzzle23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle23.swift; sourceTree = "<group>"; };
 		6307514D2589EA2E00BB119F /* Input16-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input16-test"; sourceTree = "<group>"; };
 		63075158258A370300BB119F /* Input16-test2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input16-test2"; sourceTree = "<group>"; };
 		630AEC73257B5C28008B85A8 /* Input05 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input05; sourceTree = "<group>"; };
@@ -202,6 +204,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63044EE625930EE400E21223 /* 23 */ = {
+			isa = PBXGroup;
+			children = (
+				63044EE725930EFC00E21223 /* Puzzle23.swift */,
+			);
+			path = 23;
+			sourceTree = "<group>";
+		};
 		630AEC72257B5C0A008B85A8 /* 05 */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +444,7 @@
 				6310E6E1258F046C00BA8F0E /* 20 */,
 				63E9FB7D2590BF93005A65E7 /* 21 */,
 				637702852591C224006FA9B7 /* 22 */,
+				63044EE625930EE400E21223 /* 23 */,
 				63F4D5D625765A3200295154 /* main.swift */,
 			);
 			path = AOC2020;
@@ -624,6 +635,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B0B8EE258742C1001EBF08 /* Extensions.swift in Sources */,
+				63044EE825930EFC00E21223 /* Puzzle23.swift in Sources */,
 				6310E6E7258F048D00BA8F0E /* Puzzle20.swift in Sources */,
 				630AEC75257B5C3E008B85A8 /* Puzzle05.swift in Sources */,
 				635AA8142578ACCA005728C4 /* Puzzle03.swift in Sources */,

@@ -16,3 +16,14 @@ extension String {
         return padded
     }
 }
+
+extension RangeReplaceableCollection where Index: Hashable {
+    public mutating func removeAll<C>(at collection: C) where C: Collection, C.Element == Index {
+        let indices = Set(collection)
+        precondition(indices.count == collection.count && indices.allSatisfy(self.indices.contains))
+        indices.lazy.sorted().enumerated().forEach { (offset, index) in
+            let shiftedIndex = self.index(index, offsetBy: -offset)
+            remove(at: shiftedIndex)
+        }
+    }
+}
