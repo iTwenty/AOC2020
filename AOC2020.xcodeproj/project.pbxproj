@@ -85,6 +85,7 @@
 		63F91389257F3F8F0079160A /* Input08 in Resources */ = {isa = PBXBuildFile; fileRef = 63F91388257F3F8F0079160A /* Input08 */; };
 		63F9138F257F3F9B0079160A /* Puzzle08.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9138E257F3F9B0079160A /* Puzzle08.swift */; };
 		63F91393257F41B10079160A /* ConsoleProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F91392257F41B10079160A /* ConsoleProgram.swift */; };
+		C05AC3382595BA2500BC7120 /* Puzzle25.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05AC3372595BA2500BC7120 /* Puzzle25.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +187,7 @@
 		63F91388257F3F8F0079160A /* Input08 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input08; sourceTree = "<group>"; };
 		63F9138E257F3F9B0079160A /* Puzzle08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle08.swift; sourceTree = "<group>"; };
 		63F91392257F41B10079160A /* ConsoleProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleProgram.swift; sourceTree = "<group>"; };
+		C05AC3372595BA2500BC7120 /* Puzzle25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle25.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +464,7 @@
 				637702852591C224006FA9B7 /* 22 */,
 				63044EE625930EE400E21223 /* 23 */,
 				6350B3D625946A6F00CBE800 /* 24 */,
+				C05AC3362595BA0D00BC7120 /* 25 */,
 				63F4D5D625765A3200295154 /* main.swift */,
 			);
 			path = AOC2020;
@@ -513,6 +516,14 @@
 				63F9138E257F3F9B0079160A /* Puzzle08.swift */,
 			);
 			path = 08;
+			sourceTree = "<group>";
+		};
+		C05AC3362595BA0D00BC7120 /* 25 */ = {
+			isa = PBXGroup;
+			children = (
+				C05AC3372595BA2500BC7120 /* Puzzle25.swift */,
+			);
+			path = 25;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -659,6 +670,7 @@
 				630AEC75257B5C3E008B85A8 /* Puzzle05.swift in Sources */,
 				635AA8142578ACCA005728C4 /* Puzzle03.swift in Sources */,
 				6397E7D9257E21F1008AC90C /* Edge.swift in Sources */,
+				C05AC3382595BA2500BC7120 /* Puzzle25.swift in Sources */,
 				63B0B8E425873C33001EBF08 /* Queue.swift in Sources */,
 				63E9FB892590BFC3005A65E7 /* Puzzle21.swift in Sources */,
 				636ECDDF258B1D1E00B3EB82 /* Puzzle17.swift in Sources */,
